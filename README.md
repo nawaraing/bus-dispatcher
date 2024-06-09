@@ -4,7 +4,11 @@
 
 # 🚏배차일보 서비스🚌
 
-<img width="50%" alt="image" src="https://github.com/nawaraing/bus-dispatcher/assets/59286081/e59409d7-f66a-4666-9c21-7ef8746c1fdb">
+<a href="https://youtu.be/8lw3am-rgrM" target="_blank">
+  <img width="50%" alt="image" src="https://github.com/nawaraing/bus-dispatcher/assets/59286081/e59409d7-f66a-4666-9c21-7ef8746c1fdb">
+</a>
+
+###### (사진을 클릭하여 시연 영상 시청하기)
 
 ## 🛠️사용한 기술
 
