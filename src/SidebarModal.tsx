@@ -19,7 +19,7 @@ const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, onClose, driverName
   const [minute, setMinute] = useState(parseInt(start[1]));
   const [defaultHour, setDefaultHour] = useState(parseInt(start[0]));
   const [defaultMinute, setDefaultMinute] = useState(parseInt(start[1]));
-  const [sideBarInfo, setSideBarInfo] = useState(driverName + ' - ' + col + '회차 / ' + startTime);
+  const [sideBarInfo, setSideBarInfo] = useState(`${driverName} - ${col}회차 / ${startTime}`);
 
   useEffect(() => {
     const start = startTime.split(':');
@@ -27,7 +27,7 @@ const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, onClose, driverName
     setMinute(parseInt(start[1]));
     setDefaultHour(parseInt(start[0]));
     setDefaultMinute(parseInt(start[1]));
-    setSideBarInfo(driverName + ' - ' + col + '회차 / ' + startTime);
+    setSideBarInfo(`${driverName} - ${col}회차 / ${startTime}`);
   }, [startTime]);
 
   const handleHourChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -89,7 +89,7 @@ const SidebarModal: React.FC<SidebarModalProps> = ({ isOpen, onClose, driverName
         setDefaultHour(hour);
         setDefaultMinute(minute);
 
-        setSideBarInfo(driverName + ' - ' + col + '회차 / ' + newTime);
+        setSideBarInfo(`${driverName} - ${col}회차 / ${newTime}`);
       }
       updateTime(sideId, newTime);
     

@@ -70,7 +70,7 @@ const DraggableRow: React.FC<DraggableRowProps> = ({ id, index, ids, busId, busN
       <td>{busNumber}</td>
       <td>{driverName}</td>
       {startTimes.map((startTime: string, idx: number) => (
-        <td key={idx} className={activeColumns[idx] && activeRows[rowIndex] ? 'table-success' : ''} onClick={() => handleColumnActive(driverName + '-' + rowIndex + '-' + (idx+1).toString() + '-' + startTime, ids[idx], activeRows, rowIndex, idx)}><a id={ids[idx]}>{startTime}</a></td>
+        <td key={idx} className={activeColumns[idx] && activeRows[rowIndex] ? 'table-success' : ''} onClick={() => handleColumnActive(`${driverName}-${rowIndex}-${(idx+1).toString()}-${startTime}`, ids[idx], activeRows, rowIndex, idx)}><a id={ids[idx]}>{startTime}</a></td>
       ))}
     </tr>
   );

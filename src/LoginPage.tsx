@@ -33,7 +33,7 @@ const LoginPage: React.FC = () => {
       navigate('/home'); // 로그인 성공 시 /home 페이지로 이동
 
     } catch (error) {
-      console.error('Error:', error);
+      console.error(`Error: ${error}`);
     }
   };
 

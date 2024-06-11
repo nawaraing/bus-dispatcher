@@ -1,5 +1,5 @@
 // TODO: apiUrl과 routeId는 config 파일에서 가져오도록 수정
-const apiUrl = 'http://kikibus.iptime.org:18080/';
+const apiUrl = 'http://kikibus.iptime.org:18080';
 const routId = 70;
 
 // 오늘 날짜를 'yyyy-MM-dd' 형태로 저장
@@ -11,11 +11,11 @@ const todayDate = `${year}-${month}-${day}`;
 
 export const subBaseDate = '2024-05-20';
 
-export const loginUrl = apiUrl + 'auth/login';
-export const getTodayDispatchUrl = apiUrl + 'dispatch/' + routId + '/' + todayDate;
-export const getTestDateDispatchUrl = apiUrl + 'dispatch/' + routId + '/' + subBaseDate;
-export const getDispatchUrl = apiUrl + 'dispatch/' + routId + '/';
-export const updateDispatchUrl = apiUrl + 'dispatch/update/' + '' + '';
+export const loginUrl = `${apiUrl}/auth/login`;
+export const getTodayDispatchUrl = `${apiUrl}/dispatch/${routId}/${todayDate}`;
+export const getTestDateDispatchUrl = `${apiUrl}/dispatch/${routId}/${subBaseDate}`;
+export const getDispatchUrl = `${apiUrl}/dispatch/${routId}/`;
+export const updateDispatchUrl = `${apiUrl}/dispatch/update/`;
 
 export class DispatchItem {
   busId: number;
