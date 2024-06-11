@@ -1,4 +1,3 @@
-// src/SidebarModal.tsx
 import React, { useState, useEffect } from 'react';
 import { updateDispatchUrl } from './KikiiApi';
 
