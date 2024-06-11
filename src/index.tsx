@@ -10,6 +10,8 @@ import DispatchPage from './DispatchPage';
 import './assets/vendor/fonts/boxicons.css';
 import './assets/img/favicon/favicon.ico';
 import './assets/vendor/css/core.css';
+import './assets/vendor/css/Dispatch.css';
+import './assets/vendor/css/SidebarModal.css';
 import './assets/vendor/css/theme-default.css';
 import './assets/css/demo.css';
 import './assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css';

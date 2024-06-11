@@ -1,6 +1,5 @@
 // src/SidebarModal.tsx
 import React, { useState, useEffect } from 'react';
-import './Dispatch.css';
 import { updateDispatchUrl } from './KikiiApi';
 
 interface SidebarModalProps {
